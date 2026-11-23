@@ -3,6 +3,23 @@ Prometheus Proxmox VE Exporter
 
 |Build Status| |Package Version|
 
+About this fork
+---------------
+
+This repository is a fork of `prometheus-pve-exporter
+<https://github.com/prometheus-pve/prometheus-pve-exporter>`_ by Lorenz
+Schori and contributors, maintained by `NodeRings <https://noderings.com/>`_.
+The ``noderings`` branch adds:
+
+- ``name`` labels on cluster resource metrics.
+- Per-node aggregates for guests that NodeRings does not manage, to monitor
+  overallocation.
+- Pinned CPU (affinity) metrics for dedicated core allocation.
+- A ``Makefile`` for multi-arch image builds.
+
+Files changed from upstream say so in their header. The fork is released under
+the same Apache License 2.0 as upstream (see ``LICENSE``).
+
 This is an exporter that exposes information gathered from Proxmox VE
 node for use by the Prometheus monitoring system.
 

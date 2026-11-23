@@ -1,5 +1,8 @@
 """
 Prometheus collecters for Proxmox VE cluster.
+
+Modified by NodeRings (2026): added name labels, non-NodeRings guest
+aggregates and pinned CPU metrics. See README.rst, "About this fork".
 """
 # pylint: disable=too-few-public-methods
 
